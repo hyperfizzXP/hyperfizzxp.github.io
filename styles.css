@@ -57,8 +57,16 @@ a:link {
   z-index: 2;
 }
 
+
 .startButtonImage{
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 767px) {
+  .startButtonImage{height: 120px}
+  .startButton + label{top: -30px;}
+  .startButton:checked + label{top: -30px};
+  .taskbar{height: 90px;}
 }
 
 #startMenu {
