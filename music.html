@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>cool music | hyperfizzXP.com</title>
+<title>Music | hyperfizzXP Web</title>
 <link rel="icon" type="image/x-icon" href="images\Logo.png">
+<link rel="stylesheet" href="styles.css">
 
 <style>
-body {
-  background: linear-gradient(45deg, rgba(3,25,37,1) 0%, rgba(5,8,55,1) 22%, rgba(37,9,60,1) 75%, rgba(108,0,98,1) 100%);
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-  color:#FFFFCC;
-  font-family:Comic Sans MS;
-  font-size:20px
+.window1Border {
+    height: 300px;
+    width: 800px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 400px);
+    top: calc(40% - 150px);
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window1Contents {
+    height: 250px;
+    width: 790px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
 }
 </style>
 </head>
 
 <body>
+<div class="window1Border">
+  <p class="windowTitle">New Album</p>
+  <div class="window1Contents">
+    <div style="display: inline-block;">
+      <img src="images/album.png" style="width: 250px; height: 250px;">
+    </div>
+    <div style="display: inline-block; width: 530px; vertical-align:top;">
+      <h2>COMING SOON: (don't) turn away</h2>
+      <p>My debut album releases soon. Make sure not to miss it, and stay tuned for updates!</p>
+      <p>Download one of the tracks for FREE!!!</p>
+      <audio controls><source src="audio/here, now.mp3" type="audio/mpeg"></audio>
+    </div>
+  </div>
+</div>
 
-<h1 style="font-size:60px"><center>banger tunez</center></h1>
-
-<p1><center>here are several of my favourite albums</center></p1>
-
-<br>
-
-<p1><center>A Fever You Can't Sweat Out - Panic! At The Disco</center></p1>
-<p1><center><img src="images/music/afycso.jpeg"></center></p1>
-<p1><center>favourite track: Time To Dance</center></p1>
-
-<br>
-
-<p1><center>MFZB - Zebrahead</center></p1>
-<p1><center><img src="images/music/mfzb.jpg"></center></p1>
-<p1><center>favourite track: Rescue Me</center></p1>
-
-<br>
-
-<p1><center>Burn Out The Stars - Magna-Fi</center></p1>
-<p1><center><img src="images/music/bots.jpeg"></center></p1>
-<p1><center>favourite track: When I Leave You</center></p1>
-
-<br>
-
-<p1><center>Broadcast To The World - Zebrahead</center></p1>
-<p1><center><img src="images/music/bttw.jpg"></center></p1>
-<p1><center>favourite track: Karma Flavored Whisky</center></p1>
-
-<br>
-
-<p1><center>Ruiner - A Wilhelm Scream</center></p1>
-<p1><center><img src="images/music/ruiner.jpg"></center></p1>
-<p1><center>favourite track: The Kids Can Eat A Bag Of Dicks</center></p1>
-
-<br>
-
-<p1><center>Orchids And Ammunition - Drist</center></p1>
-<p1><center><img src="images/music/orchids.jpg"></center></p1>
-<p1><center>favourite track: Herophelia</center></p1>
-
-<br>
-
-<p1><center>element-8 - element-8</center></p1>
-<p1><center><img src="images/music/element8.jpg"></center></p1>
-<p1><center>favourite track: Soak</center></p1>
-
-<br>
-
-<p1><center>The Artist In The Ambulance - Thrice</center></p1>
-<p1><center><img src="images/music/ambulance.jpeg"></center></p1>
-<p1><center>favourite track: Paper Tigers</center></p1>
-
-<br>
-
-<p1><center>Self Titled - CJ Szuter</center></p1>
-<p1><center><img src="images/music/selftitled.jpg"></center></p1>
-<p1><center>favourite track: New Day</center></p1>
-
-<br>
-
-<p1><center>Embrace The Curse - I Hate Kate</center></p1>
-<p1><center><img src="images/music/embracethecurse.jpg"></center></p1>
-<p1><center>favourite track: The Thrill</center></p1>
-
-<br>
-
-<p1><center><a href="index.html">home page</a></center></p1>
+<div class="evilTaskbar">
+  <div class="taskbar"></div>
+  <input id="startButton" type="checkbox" class="startButton"></checkbox>
+  <label for="startButton"><img class="startButtonImage" src="images/startbutton/start.png" onmouseover="this.src='images/startbutton/hover.png';" onmouseout="this.src='images/startbutton/start.png';" onclick="this.src='images/startbutton/pressed.png';"></label>
+  <div class="startMenu" id="startMenu">
+    <div class="startAppsList">
+      <a href="https://twitter.com/hyperfizzXP"><button class="appButtons"><img src="images/twitter.png" style="width:30px; height:30px"> Follow me on Twitter!</button></a>
+      <a href="https://www.youtube.com/c/hyperfizzXP"><button class="appButtons"><img src="images/youtube.png" style="width:30px; height:30px"> Subscribe to my YouTube!</button></a>
+      <a href="https://www.tiktok.com/@hyperfizz_xp"><button class="appButtons"><img src="images/tiktok.png" style="width:30px; height:30px"> Follow me on TikTok!</button></a>
+      <a href="https://discord.gg/G2nnPgKVH3"><button class="appButtons"><img src="images/discord.png" style="width:30px; height:30px"> Join my Discord Server!</button></a>
+    </div>
+    <div class="startProgramLinks">
+      <center><img src="images/profilepic.png" class="profilePic"></center>
+      <a href="index.html"><button class="programButtons">Home</button></a>
+      <a href="about-me.html"><button class="programButtons">About Me</button></a>
+      <a href="music.html"><button class="programButtons">Music</button></a>
+      <a href="news.html"><button class="programButtons">News</button></a>
+      <a href="fun-facts.html"><button class="programButtons">Fun Facts</button></a>
+      <a href="hotelmario.html"><button class="programButtons">The Entire Hotel Mario Script</button></a>
+      <a href="info.html"><button class="programButtons">Website Info</button></a>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -1,53 +1,282 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Latest News Stories | hyperfizzXP.com</title>
+<title>Latest News Stories | hyperfizzXP Web</title>
 <link rel="icon" type="image/x-icon" href="images\Logo.png">
+<link rel="stylesheet" href="styles.css">
 
 <style>
-body {
-  background: linear-gradient(45deg, rgba(3,25,37,1) 0%, rgba(5,8,55,1) 22%, rgba(37,9,60,1) 75%, rgba(108,0,98,1) 100%);
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-  color:#FFFFCC;
-  font-family:Comic Sans MS;
-  font-size:11px;
+.window1Border {
+    height: 330px;
+    width: 310px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 475px);
+    top: 300px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
 }
+
+.window1Contents {
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window2Border {
+    height: 330px;
+    width: 310px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 300px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window2Contents {
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window3Border {
+    height: 330px;
+    width: 310px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: calc(50% - 485px);
+    top: 300px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window3Contents {
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window4Border {
+    height: 330px;
+    width: 310px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 475px);
+    top: 650px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window4Contents {
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window5Border {
+    height: 330px;
+    width: 310px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 650px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window5Contents {
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window6Border {
+    height: 330px;
+    width: 310px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: calc(50% - 485px);
+    top: 650px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window6Contents {
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1 style="font-size:60px"><center>Latest News</center></h1>
+<h1 style="font-size:60px; color: white;"><center>Latest News</center></h1>
 
 <p1><center><img src="images/rover.webp"></center></p1>
 
-<center>
-<div style="display: inline-block; width:21%">
-<figure><a href="news/55gradiation.html"><img src="images/news/lowres/5gradiation.jpg"><figcaption>The Dangers Of 5G Radiation And How To Protect Yourself</figcaption></a></figure>
+<div class="window1Border">
+  <p class="windowTitle">News</p>
+  <div class="window1Contents">
+    <a href="news/6retrobankrupt.html">
+      <img src="images/news/lowres/bankrupt.jpg">
+      <center>Retro Industries Files For Bankruptcy</center>
+    </a>
+  </div>
 </div>
 
-<div style="display: inline-block; width:21%">
-<figure><a href="news/4protofounddead.html"><img src="images/news/lowres/proto.jpg"><figcaption>Proto Found Dead In Chicago After Drive-By Shooting</figcaption></a></figure>
+<div class="window2Border">
+  <p class="windowTitle">News</p>
+  <div class="window2Contents">
+    <a href="news/55gradiation.html">
+      <img src="images/news/lowres/5gradiation.jpg">
+      <center>The Dangers Of 5G Radiation And How To Protect Yourself</center>
+    </a>
+  </div>
 </div>
 
-<div style="display: inline-block; width:21%">
-<figure><a href="news/3imnothinglikeyall.html"><img src="images/news/lowres/imnothinglikeyall.jpg"><figcaption>Fish Jumps Out Of Bowl - Claims To Be "nothing like yall"</figcaption></a></figure>
+<div class="window3Border">
+  <p class="windowTitle">News</p>
+  <div class="window3Contents">
+    <a href="news/4protofounddead.html">
+      <img src="images/news/lowres/proto.jpg">
+      <center>Proto Found Dead In Chicago After Drive-By Shooting</center>
+    </a>
+  </div>
 </div>
 
-<br>
-
-<div style="display: inline-block; width:21%">
-<figure><a href="news/2princesskoopahotel.html"><img src="images/news/lowres/hotelmario.jpg"><figcaption>Princess Kidnapped - Forced to Live In Hotel</figcaption></a></figure>
+<div class="window4Border">
+  <p class="windowTitle">News</p>
+  <div class="window4Contents">
+    <a href="news/3imnothinglikeyall.html">
+      <img src="images/news/lowres/imnothinglikeyall.jpg">
+      <center>Fish Jumps Out Of Bowl - Claims To Be "nothing like yall"</center>
+    </a>
+    <br>
+    <br>
+    <p style="color: rgba(0, 0, 0, 0.0);">SUPER secret text</p>
+  </div>
 </div>
 
-<div style="display: inline-block; width:21%">
-<figure><a href="news/1ubmlosesdata.html"><img src="images/news/lowres/protegentubm.jpg"><figcaption>Unnamed Business Man Loses Data (And You Could Too)</figcaption></a></figure>
+<div class="window5Border">
+  <p class="windowTitle">News</p>
+  <div class="window5Contents">
+    <a href="news/2princesskoopahotel.html">
+      <img src="images/news/lowres/hotelmario.jpg">
+      <center>Princess Kidnapped - Forced to Live In Hotel</center>
+    </a>
+  </div>
 </div>
-</center>
 
-<p1 style="font-size:20px"><center><a href="index.html">home page</a></center></p1>
+<div class="window6Border">
+  <p class="windowTitle">News</p>
+  <div class="window6Contents">
+    <a href="news/4protofounddead.html">
+      <a href="news/1ubmlosesdata.html">
+        <img src="images/news/lowres/protegentubm.jpg">
+        <center>Unnamed Business Man Loses Data (And You Could Too)</center>
+      </a>
+    </a>
+  </div>
+</div>
+
+<div class="evilTaskbar">
+  <div class="taskbar"></div>
+  <input id="startButton" type="checkbox" class="startButton"></checkbox>
+  <label for="startButton"><img class="startButtonImage" src="images/startbutton/start.png" onmouseover="this.src='images/startbutton/hover.png';" onmouseout="this.src='images/startbutton/start.png';" onclick="this.src='images/startbutton/pressed.png';"></label>
+  <div class="startMenu" id="startMenu">
+    <div class="startAppsList">
+      <a href="https://twitter.com/hyperfizzXP"><button class="appButtons"><img src="images/twitter.png" style="width:30px; height:30px"> Follow me on Twitter!</button></a>
+      <a href="https://www.youtube.com/c/hyperfizzXP"><button class="appButtons"><img src="images/youtube.png" style="width:30px; height:30px"> Subscribe to my YouTube!</button></a>
+      <a href="https://www.tiktok.com/@hyperfizz_xp"><button class="appButtons"><img src="images/tiktok.png" style="width:30px; height:30px"> Follow me on TikTok!</button></a>
+      <a href="https://discord.gg/G2nnPgKVH3"><button class="appButtons"><img src="images/discord.png" style="width:30px; height:30px"> Join my Discord Server!</button></a>
+    </div>
+    <div class="startProgramLinks">
+      <center><img src="images/profilepic.png" class="profilePic"></center>
+      <a href="adbreak.html"><button class="programButtons">Home</button></a>
+      <a href="about-me.html"><button class="programButtons">About Me</button></a>
+      <a href="music.html"><button class="programButtons">Music</button></a>
+      <a href="news.html"><button class="programButtons">News</button></a>
+      <a href="fun-facts.html"><button class="programButtons">Fun Facts</button></a>
+      <a href="hotelmario.html"><button class="programButtons">The Entire Hotel Mario Script</button></a>
+      <a href="info.html"><button class="programButtons">Website Info</button></a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

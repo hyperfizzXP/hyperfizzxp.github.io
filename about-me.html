@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me | hyperfizzXP Web</title>
+<link rel="icon" type="image/x-icon" href="Images\Logo.png">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  .window1Border {
+    height: 300px;
+    width: 460px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window1Contents {
+    height: 250px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window2Border {
+    height: 400px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(20% + 500px);
+    top: 300px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window2Contents {
+    height: 350px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window3Border {
+    height: 400px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(20% + 150px);
+    top: 400px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window3Contents {
+    height: 350px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="font-size: 60px; color: white">Stuff about me bc why not</h1>
+
+<div class="window1Border">
+  <p class="windowTitle">Basic info</p>
+  <div class="window1Contents">
+    <p style="margin: 4px">Hello i am hyperfizz XP. I hail from uhh britain #ShitholeDweller. I like music and I also make music. Hotel Mario is peak medias. My pronouns are they/he/she/SO/RETRO. #RetroBros4Life!</p>
+    <img src="images/retrojumps.png" style="height: 100px; width: 100px;">
+  </div>
+</div>
+
+<div class="window2Border">
+  <p class="windowTitle">Interests</p>
+  <div class="window2Contents">
+    <ul>
+      <li>Sonic the Hedgehog</li>
+      <li>Nichijou: My Ordinary Life</li>
+      <li>Azumanga Daioh</li>
+      <li>Star Wars</li>
+      <li>Neon Genesis Evangelion</li>
+      <li>Undertale/Deltarune</li>
+      <li>Your Turn To Die</li>
+      <li>Super Mario</li>
+      <li>Minecraft</li>
+      <li>Battleblock Theater</li>
+    </ul>
+  </div>
+</div>
+
+<div class="window3Border">
+  <p class="windowTitle">Favourite Bands</p>
+  <div class="window3Contents">
+    <ul>
+      <li>Zebrahead</li>
+      <li>The Szuters/Magna-Fi</li>
+      <li>A Wilhelm Scream</li>
+      <li>Linkin Park</li>
+      <li>Element 8</li>
+    </ul>
+    <p>i'd put more down but im too LAZY</p>
+  </div>
+</div>
+
+<div class="evilTaskbar">
+  <div class="taskbar"></div>
+  <input id="startButton" type="checkbox" class="startButton"></checkbox>
+  <label for="startButton"><img class="startButtonImage" src="images/startbutton/start.png" onmouseover="this.src='images/startbutton/hover.png';" onmouseout="this.src='images/startbutton/start.png';" onclick="this.src='images/startbutton/pressed.png';"></label>
+  <div class="startMenu" id="startMenu">
+    <div class="startAppsList">
+      <a href="https://twitter.com/hyperfizzXP"><button class="appButtons"><img src="images/twitter.png" style="width:30px; height:30px"> Follow me on Twitter!</button></a>
+      <a href="https://www.youtube.com/c/hyperfizzXP"><button class="appButtons"><img src="images/youtube.png" style="width:30px; height:30px"> Subscribe to my YouTube!</button></a>
+      <a href="https://www.tiktok.com/@hyperfizz_xp"><button class="appButtons"><img src="images/tiktok.png" style="width:30px; height:30px"> Follow me on TikTok!</button></a>
+      <a href="https://discord.gg/G2nnPgKVH3"><button class="appButtons"><img src="images/discord.png" style="width:30px; height:30px"> Join my Discord Server!</button></a>
+    </div>
+    <div class="startProgramLinks">
+      <center><img src="images/profilepic.png" class="profilePic"></center>
+      <a href="index.html"><button class="programButtons">Home</button></a>
+      <a href="about-me.html"><button class="programButtons">About Me</button></a>
+      <a href="music.html"><button class="programButtons">Music</button></a>
+      <a href="news.html"><button class="programButtons">News</button></a>
+      <a href="fun-facts.html"><button class="programButtons">Fun Facts</button></a>
+      <a href="hotelmario.html"><button class="programButtons">The Entire Hotel Mario Script</button></a>
+      <a href="info.html"><button class="programButtons">Website Info</button></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

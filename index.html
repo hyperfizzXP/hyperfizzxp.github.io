@@ -1,50 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>hyperfizzXP.com</title>
+<title>hyperfizzXP Web</title>
 <link rel="icon" type="image/x-icon" href="images\Logo.png">
+<link rel="stylesheet" href="styles.css">
 
 <style>
-body {
-  background: linear-gradient(45deg, rgba(3,25,37,1) 0%, rgba(5,8,55,1) 22%, rgba(37,9,60,1) 75%, rgba(108,0,98,1) 100%);
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-  color:#FFFFCC;
-  font-family:Comic Sans MS;
-  font-size:20px
+.window1Border {
+    height: 350px;
+    width: 500px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 10%;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window1Contents {
+    height: 300px;
+    width: 490px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window2Border {
+    height: 350px;
+    width: 550px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(10% + 384px);
+    top: 450px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window2Contents {
+    height: 300px;
+    width: 540px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+.window3Border {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(10% + 608px);
+    top: 200px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window3Contents {
+    height: 250px;
+    width: 290px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+.window4Border {
+    height: 548px;
+    width: 508px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(10% + 858px);
+    top: 100px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window4Contents {
+    height: 498px;
+    width: 498px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window5Border {
+    height: 250px;
+    width: 260px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 50px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window5Contents {
+    height: 200px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
 }
 </style>
-
 </head>
 
 <body>
-<h1 style="font-size:60px"><center>welcome traveller</center></h1>
+<h1 style="font-size:60px; color:white">Welcome to my website</h1>
 
-<audio autoplay>
-<source src="audio/error.mp3" type="audio/mpeg">
-</audio>
+<div class="windows">
+  <div class="window1Border">
+    <p class="windowTitle">Welcome</p>
+    <div class="window1Contents">
+      <p style="margin: 4px">Welcome to my funny little website...</p>
+      <p style="margin: 4px"><img src="images\Clippy.png"></p>
+      <p style="margin: 4px">Hope you enjoy your time here! Take some time to explore</p>
+      <p style="margin: 4px">the many pages this website has to offer!</p>
+    </div>
+  </div>
 
-<p1><center>welcome to my funny little website</center></p1>
-<br>
-<p1><center><img src="images\Clippy.png"></center></p1>
-<p1><center>it took blood, sweat, and tears to meticulously hand craft this masterpiece of a website, pixel by pixel</center></p1>
+  <div class="window2Border">
+    <p class="windowTitle">Media Player</p>
+    <div class="window2Contents">
+      <div style="display:inline-block">
+        <img src="images/osakaflute.png">
+      </div>
+      <div style="display:inline-block">
+        <p>Download my song for FREE!!!!</p>
+        <audio controls><source src="audio/here, now.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </div>
 
-<br>
+  <div class="window3Border">
+    <p class="windowTitle">Socials.txt</p>
+    <div class="window3Contents">
+      <p style="margin: 4px">Follow my socials!</p>
+      <center>
+        <p><a href="https://twitter.com/hyperfizzXP">Twitter</a></p>
+        <p><a href="https://www.youtube.com/c/hyperfizzXP">YouTube</p>
+        <p><a href="https://www.tiktok.com/@hyperfizz_xp">TikTok</p>
+        <p><a href="https://discord.gg/G2nnPgKVH3">Discord Server</a></p>
+      </center>
+    </div>
+  </div>
 
-<center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTSni81JqLf7p5n-6Vdl7x-nfUrGJ3HAGaP5UGoYO_4K_htg/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center>
+  <div class="window4Border">
+    <p class="windowTitle">retrogaming.gif</p>
+    <div class="window4Contents">
+      <img src="images/retrogaming.gif">
+    </div>
+  </div>
+</div>
 
-<br>
+  <div class="window5Border">
+    <p class="windowTitle">the helpful rover:</p>
+    <div class="window5Contents">
+      <img src="images/rover.webp">
+      <p>Click on the start button below to navigate the website!</p>
+    </div>
+  </div>
+</div>
 
-<p1><center><img src="images/osakaflute.png"></center></p1>
-<p1><center>download my song for FREE!!!!</center></p1>
-<center><audio controls><source src="audio/doink.mp3" type="audio/mpeg"></audio></center>
+<div class="evilTaskbar">
+  <div class="taskbar"></div>
+  <input id="startButton" type="checkbox" class="startButton"></checkbox>
+  <label for="startButton"><img class="startButtonImage" src="images/startbutton/start.png" onmouseover="this.src='images/startbutton/hover.png';" onmouseout="this.src='images/startbutton/start.png';" onclick="this.src='images/startbutton/pressed.png';"></label>
+  <div class="startMenu" id="startMenu">
+    <div class="startAppsList">
+      <a href="https://twitter.com/hyperfizzXP"><button class="appButtons"><img src="images/twitter.png" style="width:30px; height:30px"> Follow me on Twitter!</button></a>
+      <a href="https://www.youtube.com/c/hyperfizzXP"><button class="appButtons"><img src="images/youtube.png" style="width:30px; height:30px"> Subscribe to my YouTube!</button></a>
+      <a href="https://www.tiktok.com/@hyperfizz_xp"><button class="appButtons"><img src="images/tiktok.png" style="width:30px; height:30px"> Follow me on TikTok!</button></a>
+      <a href="https://discord.gg/G2nnPgKVH3"><button class="appButtons"><img src="images/discord.png" style="width:30px; height:30px"> Join my Discord Server!</button></a>
+    </div>
+    <div class="startProgramLinks">
+      <center><img src="images/profilepic.png" class="profilePic"></center>
+      <a href="index.html"><button class="programButtons">Home</button></a>
+      <a href="about-me.html"><button class="programButtons">About Me</button></a>
+      <a href="music.html"><button class="programButtons">Music</button></a>
+      <a href="news.html"><button class="programButtons">News</button></a>
+      <a href="fun-facts.html"><button class="programButtons">Fun Facts</button></a>
+      <a href="hotelmario.html"><button class="programButtons">The Entire Hotel Mario Script</button></a>
+      <a href="info.html"><button class="programButtons">Website Info</button></a>
+    </div>
+  </div>
+</div>
 
-<br>
-
-<p1><center>use the links below to navigate the website</center></p1>
-<br>
-
-<p1><center><a href="about me.html">about me</a> | <a href="socials.html">socials</a> | <a href="music.html">cool music</a> | <a href="interests.html">interests</a> | <a href="fun facts.html">fun facts</a> | <a href="relax.html">have some rest</a> | <a href="hotelmario.html">the entire Hotel Mario script</a> | <a href="news.html">latest news</a></center></p1>
 </body>
 </html>

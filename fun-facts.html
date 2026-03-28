@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fun Facts | hyperfizzXP Web</title>
+<link rel="icon" type="image/x-icon" href="images\Logo.png">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.window1Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    top: 300px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window1Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window2Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20%;
+    top: 600px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window2Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window3Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    top: 900px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window3Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window4Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20%;
+    top: 1200px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window4Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window5Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    top: 1500px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window5Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window6Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20%;
+    top: 1800px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window6Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window7Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    top: 2100px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window7Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window8Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20%;
+    top: 2400px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window8Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window9Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%;
+    top: 2700px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window9Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+
+.window10Border {
+    height: 250px;
+    width: 350px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20%;
+    top: 3000px;
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window10Contents {
+    height: 200px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="font-size:60px; color: white;">Fun facts with hyperfizz XP</h1>
+
+<h2 style="color: white;"><i>They say you learn something new every day, and you can learn many new things from these very interesting fun facts!</i></h2>
+
+<div class="window1Border">
+  <p class="windowTitle">Fun Fact #1</p>
+  <div class="window1Contents">
+    <center>Fun Fact #1: Apple's "Magic Mouse" isn't actually magic!</center>
+    <center><img src="images\fun facts\magic mouse.jpg"></center>
+  </div>
+</div>
+
+<div class="window2Border">
+  <p class="windowTitle">Fun Fact #2</p>
+  <div class="window2Contents">
+    <center>Fun Fact #2: Windows 2000 was realesed in the year 2000!</center>
+    <center><img src="images\fun facts\windows 2000.png" style="height: 150px;"></center>
+  </div>
+</div>
+
+<div class="window3Border">
+  <p class="windowTitle">Fun Fact #3</p>
+  <div class="window3Contents">
+    <center>Fun Fact #3: Windows 11 has at least 2 users!</center>
+    <center><img src="images\fun facts\windows 11.png" style="height: 150px;"></center>
+  </div>
+</div>
+
+<div class="window4Border">
+  <p class="windowTitle">Fun Fact #4</p>
+  <div class="window4Contents">
+    <center>Fun Fact #4: your smartphone probably has a charging port!</center>
+    <center><img src="images\fun facts\iphone.png" style="height: 150px;"></center>
+  </div>
+</div>
+
+<div class="window5Border">
+  <p class="windowTitle">Fun Fact #5</p>
+  <div class="window5Contents">
+    <center>Fun Fact #5: if you are seeing this, you probably have an internet connection!</center>
+    <center><a href="seeeecret.html"><img src="images\fun facts\netscapecube.gif"></a></center>
+  </div>
+</div>
+
+<div class="window6Border">
+  <p class="windowTitle">Fun Fact #6</p>
+  <div class="window6Contents">
+    <center>Fun Fact #6: the iMac is a computer that exists!</center>
+    <center><img src="images\fun facts\imac.png" style="height: 150px;"></center>
+  </div>
+</div>
+
+<div class="window7Border">
+  <p class="windowTitle">Fun Fact #7</p>
+  <div class="window7Contents">
+    <center>Fun Fact #7: there is probably a skeleton inside your body right now!</center>
+    <center><img src="images\fun facts\skull emoji.jpg" style="height: 150px;"></center>
+  </div>
+</div>
+
+<div class="window8Border">
+  <p class="windowTitle">Fun Fact #8</p>
+  <div class="window8Contents">
+    <center>Fun Fact #8: money can be used as a currency!</center>
+    <center><img src="images\fun facts\mone.jpg" style="height: 150px;"></center>
+  </div>
+</div>
+
+<div class="window9Border">
+  <p class="windowTitle">Fun Fact #9</p>
+  <div class="window9Contents">
+    <center>Fun Fact #9: contrary to popular belief, Sonic the Hedgehog is, in fact, not a sabre-tooth tiger, but actually a hedgehog!</center>
+    <center><img src="images\fun facts\sonic.jpg" style="height: 100px; width: 250px;"></center>
+  </div>
+</div>
+
+<div class="window10Border">
+  <p class="windowTitle">Fun Fact #10</p>
+  <div class="window10Contents">
+    <center>Fun Fact #10: in order to make people laugh, you must be funny!</center>
+    <center><img src="images\fun facts\laugh track so haha funny lmfao momento right here like and subscribe.jpg" style="height: 150px;"></center>
+    <br>
+    <br>
+    <p>Secret Text...</p>
+  </div>
+</div>
+
+<div class="evilTaskbar">
+  <div class="taskbar"></div>
+  <input id="startButton" type="checkbox" class="startButton"></checkbox>
+  <label for="startButton"><img class="startButtonImage" src="images/startbutton/start.png" onmouseover="this.src='images/startbutton/hover.png';" onmouseout="this.src='images/startbutton/start.png';" onclick="this.src='images/startbutton/pressed.png';"></label>
+  <div class="startMenu" id="startMenu">
+    <div class="startAppsList">
+      <a href="https://twitter.com/hyperfizzXP"><button class="appButtons"><img src="images/twitter.png" style="width:30px; height:30px"> Follow me on Twitter!</button></a>
+      <a href="https://www.youtube.com/c/hyperfizzXP"><button class="appButtons"><img src="images/youtube.png" style="width:30px; height:30px"> Subscribe to my YouTube!</button></a>
+      <a href="https://www.tiktok.com/@hyperfizz_xp"><button class="appButtons"><img src="images/tiktok.png" style="width:30px; height:30px"> Follow me on TikTok!</button></a>
+      <a href="https://discord.gg/G2nnPgKVH3"><button class="appButtons"><img src="images/discord.png" style="width:30px; height:30px"> Join my Discord Server!</button></a>
+    </div>
+    <div class="startProgramLinks">
+      <center><img src="images/profilepic.png" class="profilePic"></center>
+      <a href="adbreak.html"><button class="programButtons">Home</button></a>
+      <a href="about-me.html"><button class="programButtons">About Me</button></a>
+      <a href="music.html"><button class="programButtons">Music</button></a>
+      <a href="news.html"><button class="programButtons">News</button></a>
+      <a href="fun-facts.html"><button class="programButtons">Fun Facts</button></a>
+      <a href="hotelmario.html"><button class="programButtons">The Entire Hotel Mario Script</button></a>
+      <a href="info.html"><button class="programButtons">Website Info</button></a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

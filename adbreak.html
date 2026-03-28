@@ -3,33 +3,78 @@
 <head>
 <title>Ad Break | hyperfizzXP.com</title>
 <link rel="icon" type="image/x-icon" href="images\Logo.png">
+<link rel="stylesheet" href="styles.css">
 
 <style>
-body {
-  background: linear-gradient(45deg, rgba(3,25,37,1) 0%, rgba(5,8,55,1) 22%, rgba(37,9,60,1) 75%, rgba(108,0,98,1) 100%);
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-  color:#FFFFCC;
-  font-family:Comic Sans MS;
-  font-size:20px
+.window1Border {
+    height: 430px;
+    width: 700px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 50px;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 350px);
+    top: calc(40% - 150px);
+    border-color: rgba(220, 249, 250, 0.5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.window1Contents {
+    height: 380px;
+    width: 690px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    align-self: center;
 }
 </style>
 </head>
 
 <body>
 
-<h1 style="font-size:60px"><center>Ad Break</center></h1>
+<h1 style="font-size:60px; color: white;"><center>Ad Break</center></h1>
 
-<center>
-<video width="320" height="240" autoplay muted controls>
-<source src="videos/advertlow.mp4" type="video/mp4">
-</video>
-</center>
+<div class="window1Border">
+  <p class="windowTitle">Advertisement</p>
+  <div class="window1Contents">
+    <center>
+      <h2>(ad) You will not believe what the two brothers did!</h2>
+      <video width="320" height="240" autoplay muted controls><source src="videos/advertlow.mp4" type="video/mp4"></video>
+      <p><a href="index.html">skip ad</a></p>
+    </center>
+  </div>
+</div>
 
-<p1><center>‎ </center></p1>
-
-<p1><center>‎<a href="index.html">skip ad</a></center></p1>
+<div class="evilTaskbar">
+  <div class="taskbar"></div>
+  <input id="startButton" type="checkbox" class="startButton"></checkbox>
+  <label for="startButton"><img class="startButtonImage" src="images/startbutton/start.png" onmouseover="this.src='images/startbutton/hover.png';" onmouseout="this.src='images/startbutton/start.png';" onclick="this.src='images/startbutton/pressed.png';"></label>
+  <div class="startMenu" id="startMenu">
+    <div class="startAppsList">
+      <a href="https://twitter.com/hyperfizzXP"><button class="appButtons"><img src="images/twitter.png" style="width:30px; height:30px"> Follow me on Twitter!</button></a>
+      <a href="https://www.youtube.com/c/hyperfizzXP"><button class="appButtons"><img src="images/youtube.png" style="width:30px; height:30px"> Subscribe to my YouTube!</button></a>
+      <a href="https://www.tiktok.com/@hyperfizz_xp"><button class="appButtons"><img src="images/tiktok.png" style="width:30px; height:30px"> Follow me on TikTok!</button></a>
+      <a href="https://discord.gg/G2nnPgKVH3"><button class="appButtons"><img src="images/discord.png" style="width:30px; height:30px"> Join my Discord Server!</button></a>
+    </div>
+    <div class="startProgramLinks">
+      <center><img src="images/profilepic.png" class="profilePic"></center>
+      <a href="index.html"><button class="programButtons">Home</button></a>
+      <a href="about-me.html"><button class="programButtons">About Me</button></a>
+      <a href="music.html"><button class="programButtons">Music</button></a>
+      <a href="news.html"><button class="programButtons">News</button></a>
+      <a href="fun-facts.html"><button class="programButtons">Fun Facts</button></a>
+      <a href="hotelmario.html"><button class="programButtons">The Entire Hotel Mario Script</button></a>
+      <a href="info.html"><button class="programButtons">Website Info</button></a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
